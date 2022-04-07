@@ -8,7 +8,6 @@
 
 import UIKit
 import VeryfiLensHeadless
-
 import AVFoundation
 
 class HeadlessCreditCardsViewController: UIViewController {
