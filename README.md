@@ -29,7 +29,7 @@ You can find five example projects, which are the five versions of Lens that we 
 
 ### Configuration <a name="configuration"></a>
 - Clone this repository
-- Make sure your SSH key has been granted access to Veryfi's private Cocoapods repository ([here])(https://hub.veryfi.com/api/settings/keys/#package-managers-container)
+- Make sure your SSH key has been granted access to Veryfi's private Cocoapods repository [here](https://hub.veryfi.com/api/settings/keys/#package-managers-container)
 - Also make sure your SSH key has been added to ssh-agent by running this command in the Terminal: `ssh-add -K /path/to/private_key`
 - Run `pod install`
 - Replace credentials in `HeadlessCreditCardsViewController.viewDidLoad()` with yours
