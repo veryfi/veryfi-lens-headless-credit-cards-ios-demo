@@ -1,7 +1,5 @@
 # Veryfi Lens Headless
 
-![headless-gif](https://user-images.githubusercontent.com/30237430/162486140-8ddfd256-8cbd-470a-aeef-03a0e422574a.gif)
-
 Veryfi Lens Headless is a framework for your mobile app to give it document capture superpowers in minutes.
 
 Let Veryfi handle the complexities of frame processing, asset preprocessing, edge routing, and machine vision challenges in document capture. We have been at this for a long time and understand the intricate nature of mobile capture. That’s why we built Lens. Veryfi Lens is built by developers for developers; making the whole process of integrating Lens into your app fast and easy with as few lines as possible.
@@ -19,8 +17,8 @@ You can read further about Lens in Veryfi's dedicated page: https://www.veryfi.c
 4. [Other platforms](#other_platforms)
 5. [Get in contact with our team](#contact)
 
-## Veryfi Lens Headless Credit Cards iOS Example <a name="example"></a>
-You can find the demo project in this repository.
+## Veryfi Lens Headless iOS Example <a name="example"></a>
+![headless-gif](https://user-images.githubusercontent.com/30237430/162486140-8ddfd256-8cbd-470a-aeef-03a0e422574a.gif]
 
 ## Other Lens iOS Examples <a name="examples"></a>
 This is an example of how to use Veryfi Lens Credit Cards in your app, you can find the developer documentation [here](iOSLensCreditCards.pdf).
