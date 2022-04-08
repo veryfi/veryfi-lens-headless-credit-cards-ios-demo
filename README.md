@@ -16,16 +16,7 @@ You can read further about Lens in Veryfi's dedicated page: https://www.veryfi.c
 4. [Get in contact with our team](#contact)
 
 ## Veryfi Lens Headless Credit Cards IOS Example <a name="example"></a>
-You can find the demo project in this repository. You can also check the development documentation.
-- [Lens Headless for Credit Cards](LensHeadlessCreditCards.pdf)
-## Other Lens IOS Examples <a name="examples"></a>
-This is an example of how to use Veryfi Lens Headless Credit Cards in your app, you can find the developer documentation [here](LensHeadlessCreditCards.pdf).
-You can find five example projects, which are the five versions of Lens that we currently offer:
-- [Lens for Long Receipts](https://github.com/veryfi/veryfi-lens-long-receipts-ios-demo)
-- [Lens for Receipts](https://github.com/veryfi/veryfi-lens-receipts-ios-demo)
-- [Lens for Credit Cards](https://github.com/veryfi/veryfi-lens-credit-cards-ios-demo)
-- [Lens for Business Cards](https://github.com/veryfi/veryfi-lens-business-cards-ios-demo)
-- [Lens for Checks](https://github.com/veryfi/veryfi-lens-checks-ios-demo)
+You can find the demo project in this repository.
 
 ### Configuration <a name="configuration"></a>
 - Clone this repository
