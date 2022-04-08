@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		943A946927FEEF0000F07AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A946827FEEF0000F07AA7 /* AppDelegate.swift */; };
+		943A946B27FEEF0000F07AA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A946A27FEEF0000F07AA7 /* SceneDelegate.swift */; };
+		943A947027FEEF0000F07AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943A946E27FEEF0000F07AA7 /* Main.storyboard */; };
+		943A947227FEEF0000F07AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943A947127FEEF0000F07AA7 /* Assets.xcassets */; };
+		943A947527FEEF0000F07AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943A947327FEEF0000F07AA7 /* LaunchScreen.storyboard */; };
+		943A948027FEF09B00F07AA7 /* HeadlessCreditCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947C27FEF09B00F07AA7 /* HeadlessCreditCardsViewController.swift */; };
+		943A948127FEF09B00F07AA7 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947D27FEF09B00F07AA7 /* CameraView.swift */; };
+		943A948227FEF09B00F07AA7 /* CreditCardDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947E27FEF09B00F07AA7 /* CreditCardDetailsCell.swift */; };
+		943A948327FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */; };
+		943A948627FEF14A00F07AA7 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A948527FEF14A00F07AA7 /* CreditCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94EAF54627FF0350007D321E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		943A946527FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VeryfiLensHeadless-CreditCards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		943A946827FEEF0000F07AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		943A946A27FEEF0000F07AA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		943A946F27FEEF0000F07AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		943A947127FEEF0000F07AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		943A947427FEEF0000F07AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		943A947627FEEF0000F07AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943A947C27FEF09B00F07AA7 /* HeadlessCreditCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlessCreditCardsViewController.swift; sourceTree = "<group>"; };
+		943A947D27FEF09B00F07AA7 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		943A947E27FEF09B00F07AA7 /* CreditCardDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDetailsCell.swift; sourceTree = "<group>"; };
+		943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlessCreditCardResultViewControlerViewController.swift; sourceTree = "<group>"; };
+		943A948527FEF14A00F07AA7 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		943A946227FEEF0000F07AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3AB72CF5157FA686B1FEF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		943A945C27FEEF0000F07AA7 = {
+			isa = PBXGroup;
+			children = (
+				943A946727FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards */,
+				943A946627FEEF0000F07AA7 /* Products */,
+				7D3AB72CF5157FA686B1FEF4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		943A946627FEEF0000F07AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				943A946527FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		943A946727FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards */ = {
+			isa = PBXGroup;
+			children = (
+				943A948727FEF14C00F07AA7 /* Model */,
+				943A948427FEF09F00F07AA7 /* UI */,
+				943A947C27FEF09B00F07AA7 /* HeadlessCreditCardsViewController.swift */,
+				943A946827FEEF0000F07AA7 /* AppDelegate.swift */,
+				943A946A27FEEF0000F07AA7 /* SceneDelegate.swift */,
+				943A946E27FEEF0000F07AA7 /* Main.storyboard */,
+				943A947127FEEF0000F07AA7 /* Assets.xcassets */,
+				943A947327FEEF0000F07AA7 /* LaunchScreen.storyboard */,
+				943A947627FEEF0000F07AA7 /* Info.plist */,
+			);
+			path = "VeryfiLensHeadless-CreditCards";
+			sourceTree = "<group>";
+		};
+		943A948427FEF09F00F07AA7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				943A947D27FEF09B00F07AA7 /* CameraView.swift */,
+				943A947E27FEF09B00F07AA7 /* CreditCardDetailsCell.swift */,
+				943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		943A948727FEF14C00F07AA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				943A948527FEF14A00F07AA7 /* CreditCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		943A946427FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943A947927FEEF0000F07AA7 /* Build configuration list for PBXNativeTarget "VeryfiLensHeadless-CreditCards" */;
+			buildPhases = (
+				943A946127FEEF0000F07AA7 /* Sources */,
+				943A946227FEEF0000F07AA7 /* Frameworks */,
+				943A946327FEEF0000F07AA7 /* Resources */,
+				94EAF54627FF0350007D321E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VeryfiLensHeadless-CreditCards";
+			productName = "VeryfiLensHeadless-CreditCards";
+			productReference = 943A946527FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		943A945D27FEEF0000F07AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					943A946427FEEF0000F07AA7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 943A946027FEEF0000F07AA7 /* Build configuration list for PBXProject "VeryfiLensHeadless-CreditCards" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 943A945C27FEEF0000F07AA7;
+			productRefGroup = 943A946627FEEF0000F07AA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				943A946427FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		943A946327FEEF0000F07AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A947527FEEF0000F07AA7 /* LaunchScreen.storyboard in Resources */,
+				943A947227FEEF0000F07AA7 /* Assets.xcassets in Resources */,
+				943A947027FEEF0000F07AA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		943A946127FEEF0000F07AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A948627FEF14A00F07AA7 /* CreditCard.swift in Sources */,
+				943A948327FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift in Sources */,
+				943A946927FEEF0000F07AA7 /* AppDelegate.swift in Sources */,
+				943A948027FEF09B00F07AA7 /* HeadlessCreditCardsViewController.swift in Sources */,
+				943A948127FEF09B00F07AA7 /* CameraView.swift in Sources */,
+				943A946B27FEEF0000F07AA7 /* SceneDelegate.swift in Sources */,
+				943A948227FEF09B00F07AA7 /* CreditCardDetailsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		943A946E27FEEF0000F07AA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				943A946F27FEEF0000F07AA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		943A947327FEEF0000F07AA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				943A947427FEEF0000F07AA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		943A947727FEEF0000F07AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		943A947827FEEF0000F07AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		943A947A27FEEF0000F07AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VeryfiLensHeadless.xcframework/ios-arm64_x86_64-simulator",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VeryfiLensHeadless-CreditCards/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Demo App uses camera to capture documents";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.veryfi.VeryfiLensHeadless-CreditCards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		943A947B27FEEF0000F07AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VeryfiLensHeadless.xcframework/ios-arm64_x86_64-simulator",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VeryfiLensHeadless-CreditCards/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Demo App uses camera to capture documents";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.veryfi.VeryfiLensHeadless-CreditCards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		943A946027FEEF0000F07AA7 /* Build configuration list for PBXProject "VeryfiLensHeadless-CreditCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A947727FEEF0000F07AA7 /* Debug */,
+				943A947827FEEF0000F07AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943A947927FEEF0000F07AA7 /* Build configuration list for PBXNativeTarget "VeryfiLensHeadless-CreditCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A947A27FEEF0000F07AA7 /* Debug */,
+				943A947B27FEEF0000F07AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 943A945D27FEEF0000F07AA7 /* Project object */;
+}
