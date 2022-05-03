@@ -76,6 +76,13 @@ class HeadlessCreditCardsViewController: UIViewController {
         super.viewWillDisappear(animated)
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if cameraView.previewLayer.connection?.isVideoOrientationSupported ?? false {
+            cameraView.previewLayer.connection?.videoOrientation = AVCaptureVideoOrientation(interfaceOrientation:UIApplication.shared.statusBarOrientation) ?? AVCaptureVideoOrientation.portrait
+        }
+    }
+    
     override var shouldAutorotate: Bool {
         return false;
     }
