@@ -27,7 +27,7 @@ class CameraView: UIView {
     private var setupResult: SessionSetupResult = .success
     @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
     private var shapeLayer: CAShapeLayer?
-    private var previewLayer: AVCaptureVideoPreviewLayer!
+    var previewLayer: AVCaptureVideoPreviewLayer!
     
     weak var delegate: CameraViewDelegate?
     
