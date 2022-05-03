@@ -120,9 +120,11 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="MyP-l7-ych" id="gwK-MX-rWm"/>
+                        <segue destination="7JP-pN-bqo" kind="unwind" identifier="unwindToCreditCard" unwindAction="unwindToCreditCard:" id="vHE-IO-6jp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCg-3g-HjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7JP-pN-bqo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1948" y="-1315"/>
         </scene>

@@ -107,7 +107,9 @@ class HeadlessCreditCardsViewController: UIViewController {
             case .back:
                 guideLabel.text = "Flip the card over"
             case .result:
+                cameraView.stopSession()
                 VeryfiLensHeadless.shared().reset()
+                self.isLensInitialized = false
                 performSegue(withIdentifier: "creditCardResult", sender: self)
             }
         }
@@ -145,7 +147,6 @@ class HeadlessCreditCardsViewController: UIViewController {
             }
         }
     }
-    
     
     private func nextState() {
         switch state {
@@ -192,6 +193,14 @@ class HeadlessCreditCardsViewController: UIViewController {
             mergedCreditCard.cvc = (creditCard2.cvc != nil && creditCard2.cvc != "") ? creditCard2.cvc! : creditCard1.cvc
             return mergedCreditCard
         }
+    }
+    
+    @IBAction func unwindToCreditCard(_ unwindSegue: UIStoryboardSegue) {
+        cameraView.startSession()
+        self.isLensInitialized = true
+        creditCard = nil
+        VeryfiLensHeadless.shared().reset()
+        state = .front
     }
 }
 
