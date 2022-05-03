@@ -161,10 +161,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="404"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEY-A6-m7G" userLabel="border">
-                                                <rect key="frame" x="16" y="54.5" width="382" height="255"/>
+                                                <rect key="frame" x="16" y="62.5" width="382" height="239"/>
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tc3-bB-tBv">
-                                                        <rect key="frame" x="16" y="155" width="350" height="24"/>
+                                                        <rect key="frame" x="16" y="139" width="350" height="24"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -176,7 +176,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0Q-N2-0hZ">
-                                                        <rect key="frame" x="16" y="215" width="350" height="24"/>
+                                                        <rect key="frame" x="16" y="199" width="350" height="24"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -188,7 +188,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-cV-DoC">
-                                                        <rect key="frame" x="16" y="187" width="350" height="24"/>
+                                                        <rect key="frame" x="16" y="171" width="350" height="24"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -226,7 +226,7 @@
                                                     <constraint firstItem="k0Q-N2-0hZ" firstAttribute="leading" secondItem="GEY-A6-m7G" secondAttribute="leading" constant="16" id="fYI-U6-B7h"/>
                                                     <constraint firstItem="tc3-bB-tBv" firstAttribute="leading" secondItem="GEY-A6-m7G" secondAttribute="leading" constant="16" id="fYx-Ui-xRp"/>
                                                     <constraint firstItem="k0Q-N2-0hZ" firstAttribute="top" secondItem="mdL-cV-DoC" secondAttribute="bottom" constant="4" id="g6f-fH-p8a"/>
-                                                    <constraint firstAttribute="width" secondItem="GEY-A6-m7G" secondAttribute="height" multiplier="3:2" id="qwJ-hv-MdV"/>
+                                                    <constraint firstAttribute="width" secondItem="GEY-A6-m7G" secondAttribute="height" multiplier="1.6" id="qwJ-hv-MdV"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
