@@ -100,11 +100,12 @@ class HeadlessCreditCardsViewController: UIViewController {
             case .back:
                 guideLabel.text = "Flip the card over"
             case .result:
+                VeryfiLensHeadless.shared().reset()
                 performSegue(withIdentifier: "creditCardResult", sender: self)
             }
         }
     }
-
+    
     var creditCard: CreditCard? = nil {
         didSet {
             if let value = creditCard?.holder,
@@ -155,7 +156,7 @@ class HeadlessCreditCardsViewController: UIViewController {
         }
     }
     
-    private func merge(_ creditCard1: CreditCard?, creditCard2: CreditCard?) -> CreditCard? {
+    private func merge(_ creditCard1: CreditCard?, creditCard2: CreditCard?, shouldFixExistingFields: Bool) -> CreditCard? {
         guard let creditCard1 = creditCard1 else {
             if let creditCard2 = creditCard2 {
                 return creditCard2
@@ -165,14 +166,25 @@ class HeadlessCreditCardsViewController: UIViewController {
         guard let creditCard2 = creditCard2 else {
             return creditCard1
         }
-        var mergedCreditCard = CreditCard()
-        mergedCreditCard.holder = (creditCard2.holder != nil && creditCard2.holder != "") ? creditCard2.holder! : creditCard1.holder
-        mergedCreditCard.number = (creditCard2.number != nil && creditCard2.number != "") ? creditCard2.number! : creditCard1.number
-        mergedCreditCard.dates = (creditCard2.dateString != "") ? creditCard2.dates : creditCard1.dates
-        mergedCreditCard.identifier = (creditCard2.identifier != nil && creditCard2.identifier != "") ? creditCard2.identifier! : creditCard1.identifier
-        mergedCreditCard.type = (creditCard2.type != nil && creditCard2.type != "") ? creditCard2.type! : creditCard1.type
-        mergedCreditCard.cvc = (creditCard2.cvc != nil && creditCard2.cvc != "") ? creditCard2.cvc! : creditCard1.cvc
-        return mergedCreditCard
+        if shouldFixExistingFields {
+            var mergedCreditCard = CreditCard()
+            mergedCreditCard.holder = (creditCard1.holder == nil ||  creditCard1.holder == "") ? creditCard2.holder ?? "" : creditCard1.holder
+            mergedCreditCard.number = (creditCard1.number == nil ||  creditCard1.number == "") ? creditCard2.number ?? "" : creditCard1.number
+            mergedCreditCard.dates = (creditCard1.dateString == "") ? creditCard2.dates ?? [] : creditCard1.dates
+            mergedCreditCard.identifier = (creditCard1.identifier == nil ||  creditCard1.identifier == "")  ? creditCard2.identifier ?? "" : creditCard1.identifier
+            mergedCreditCard.type = (creditCard1.type == nil ||  creditCard1.type == "") ? creditCard2.type ?? "" : creditCard1.type
+            mergedCreditCard.cvc = (creditCard1.cvc == nil ||  creditCard1.cvc == "") ? creditCard2.cvc ?? "" : creditCard1.cvc
+            return mergedCreditCard
+        } else {
+            var mergedCreditCard = CreditCard()
+            mergedCreditCard.holder = (creditCard2.holder != nil && creditCard2.holder != "") ? creditCard2.holder! : creditCard1.holder
+            mergedCreditCard.number = (creditCard2.number != nil && creditCard2.number != "") ? creditCard2.number! : creditCard1.number
+            mergedCreditCard.dates = (creditCard2.dateString != "") ? creditCard2.dates : creditCard1.dates
+            mergedCreditCard.identifier = (creditCard2.identifier != nil && creditCard2.identifier != "") ? creditCard2.identifier! : creditCard1.identifier
+            mergedCreditCard.type = (creditCard2.type != nil && creditCard2.type != "") ? creditCard2.type! : creditCard1.type
+            mergedCreditCard.cvc = (creditCard2.cvc != nil && creditCard2.cvc != "") ? creditCard2.cvc! : creditCard1.cvc
+            return mergedCreditCard
+        }
     }
 }
 
@@ -216,7 +228,9 @@ extension HeadlessCreditCardsViewController: VeryfiLensHeadlessDelegate {
         
         if let data = try? JSONSerialization.data(withJSONObject: json as Any, options: .prettyPrinted),
            let dataModel = try? decoder.decode(CreditCard.self, from: data)  {
-            creditCard = merge(creditCard, creditCard2: dataModel)
+            if state != .back {
+                creditCard = merge(creditCard, creditCard2: dataModel, shouldFixExistingFields: false)
+            }
         }
     }
     
@@ -226,7 +240,7 @@ extension HeadlessCreditCardsViewController: VeryfiLensHeadlessDelegate {
         
         if let data = try? JSONSerialization.data(withJSONObject: json as Any, options: .prettyPrinted),
            let dataModel = try? decoder.decode(CreditCard.self, from: data)  {
-            creditCard = merge(creditCard, creditCard2: dataModel)
+            creditCard = merge(creditCard, creditCard2: dataModel, shouldFixExistingFields: true)
             nextState()
         }
     }
