@@ -191,7 +191,9 @@ class CameraView: UIView {
             return
         }
         
-        dataOutput.connections.first?.videoOrientation = AVCaptureVideoOrientation(interfaceOrientation:UIApplication.shared.statusBarOrientation) ?? AVCaptureVideoOrientation.portrait
+        DispatchQueue.main.async {
+            dataOutput.connections.first?.videoOrientation = AVCaptureVideoOrientation(interfaceOrientation:UIApplication.shared.statusBarOrientation) ?? AVCaptureVideoOrientation.portrait
+        }
         
         session.commitConfiguration()
     }
