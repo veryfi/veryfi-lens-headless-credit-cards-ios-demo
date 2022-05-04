@@ -23,11 +23,11 @@ class CameraView: UIView {
     
     private let session = AVCaptureSession()
     private var isSessionRunning = false
-    private let sessionQueue = DispatchQueue(label: "session queue")
+    let sessionQueue = DispatchQueue(label: "session queue")
     private var setupResult: SessionSetupResult = .success
     @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
     private var shapeLayer: CAShapeLayer?
-    private var previewLayer: AVCaptureVideoPreviewLayer!
+    var previewLayer: AVCaptureVideoPreviewLayer!
     
     weak var delegate: CameraViewDelegate?
     
@@ -57,9 +57,7 @@ class CameraView: UIView {
             setupResult = .notAuthorized
         }
         
-        sessionQueue.async { [weak self] in
-            self?.configureSession()
-        }
+        configureSession()
     }
     
     func startSession() {
@@ -70,6 +68,7 @@ class CameraView: UIView {
         sessionQueue.async {
             switch self.setupResult {
             case .success:
+                // Only setup observers and start the session if setup succeeded.
                 self.addObservers()
                 self.session.startRunning()
                 self.isSessionRunning = self.session.isRunning
@@ -99,6 +98,7 @@ class CameraView: UIView {
     }
     
     private func addObservers() {
+        
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(subjectAreaDidChange),
                                                name: .AVCaptureDeviceSubjectAreaDidChange,
@@ -125,6 +125,7 @@ class CameraView: UIView {
         guard let error = notification.userInfo?[AVCaptureSessionErrorKey] as? AVError else { return }
         
         print("Capture session runtime error: \(error)")
+        // If media services were reset, and the last start succeeded, restart the session.
         if error.code == .mediaServicesWereReset {
             sessionQueue.async {
                 if self.isSessionRunning {
@@ -191,7 +192,7 @@ class CameraView: UIView {
             return
         }
         
-        dataOutput.connections.first?.videoOrientation = AVCaptureVideoOrientation.portrait
+        dataOutput.connections.first?.videoOrientation = AVCaptureVideoOrientation(interfaceOrientation:UIApplication.shared.statusBarOrientation) ?? AVCaptureVideoOrientation.portrait
         
         session.commitConfiguration()
     }
@@ -205,6 +206,11 @@ class CameraView: UIView {
             let device = self.videoDeviceInput.device
             do {
                 try device.lockForConfiguration()
+                
+                /*
+                 Setting (focus/exposure)PointOfInterest alone does not initiate a (focus/exposure) operation.
+                 Call set(Focus/Exposure)Mode() to apply the new point of interest.
+                 */
                 if device.isFocusPointOfInterestSupported && device.isFocusModeSupported(focusMode) {
                     device.focusPointOfInterest = devicePoint
                     device.focusMode = focusMode
@@ -248,6 +254,7 @@ extension AVCaptureVideoOrientation {
 }
 
 extension CameraView: AVCaptureVideoDataOutputSampleBufferDelegate {
+    
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         delegate?.cameraView(self, didCapture: sampleBuffer)
     }

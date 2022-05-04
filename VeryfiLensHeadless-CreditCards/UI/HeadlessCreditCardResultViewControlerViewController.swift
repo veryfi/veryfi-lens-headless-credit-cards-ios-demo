@@ -21,7 +21,7 @@ class HeadlessCreditCardResultViewControlerViewController: UIViewController {
     
     @IBAction func reset(_ sender: Any) {
         VeryfiLensHeadless.shared().reset()
-        navigationController?.popViewController(animated: true)
+        performSegue(withIdentifier: "unwindToCreditCard", sender: self)
     }
     var creditCard: CreditCard? = nil {
         didSet {
