@@ -19,7 +19,9 @@ class HeadlessCreditCardsViewController: UIViewController {
     @IBOutlet weak var cardHolder: UILabel!
     @IBOutlet weak var guide: UILabel!
     @IBOutlet weak var guideLabel: UILabel!
+    
     private var isLensInitialized: Bool = false
+    private var isTorchOn = false
     
     private enum State {
         case front
@@ -55,6 +57,7 @@ class HeadlessCreditCardsViewController: UIViewController {
             }
         }
         
+        setTorchImage()
         cameraView.configure()
         cameraView.delegate = self
         borderView.layer.borderColor = UIColor.white.cgColor
@@ -107,6 +110,8 @@ class HeadlessCreditCardsViewController: UIViewController {
             case .back:
                 guideLabel.text = "Flip the card over"
             case .result:
+                isTorchOn = false
+                setTorchImage()
                 cameraView.stopSession()
                 VeryfiLensHeadless.shared().reset()
                 self.isLensInitialized = false
@@ -146,6 +151,11 @@ class HeadlessCreditCardsViewController: UIViewController {
                 cardCVC.isHidden = true
             }
         }
+    }
+    
+    private func setTorchImage() {
+        let imageName = isTorchOn ? "bolt.fill" : "bolt.slash.fill"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: imageName)?.resize(to: CGSize(width: 22, height: 22)), style: .plain, target: self, action: #selector(changeTorchMode))
     }
     
     private func nextState() {
@@ -201,6 +211,30 @@ class HeadlessCreditCardsViewController: UIViewController {
         creditCard = nil
         VeryfiLensHeadless.shared().reset()
         state = .front
+    }
+    
+    @IBAction func changeTorchMode(_ sender: Any) {
+        let captureDeviceClass: AnyClass? = NSClassFromString("AVCaptureDevice")
+        if captureDeviceClass != nil {
+            let device = AVCaptureDevice.default(for: .video)
+            if device?.hasTorch ?? false {
+                
+                do {
+                    try device?.lockForConfiguration()
+                } catch {
+                }
+                
+                if isTorchOn {
+                    device?.torchMode = .off
+                } else {
+                    device?.torchMode = .on
+                }
+                isTorchOn = !isTorchOn
+                setTorchImage()
+                
+                device?.unlockForConfiguration()
+            }
+        }
     }
 }
 
