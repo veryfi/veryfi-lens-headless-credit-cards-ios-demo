@@ -17,6 +17,7 @@
 		943A948227FEF09B00F07AA7 /* CreditCardDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947E27FEF09B00F07AA7 /* CreditCardDetailsCell.swift */; };
 		943A948327FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */; };
 		943A948627FEF14A00F07AA7 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A948527FEF14A00F07AA7 /* CreditCard.swift */; };
+		9D11972B2825FAE80011679B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D11972A2825FAE80011679B /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		943A947E27FEF09B00F07AA7 /* CreditCardDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDetailsCell.swift; sourceTree = "<group>"; };
 		943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlessCreditCardResultViewControlerViewController.swift; sourceTree = "<group>"; };
 		943A948527FEF14A00F07AA7 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		9D11972A2825FAE80011679B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		943A946727FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards */ = {
 			isa = PBXGroup;
 			children = (
+				9D11972C2825FAF10011679B /* Extensions */,
 				943A948727FEF14C00F07AA7 /* Model */,
 				943A948427FEF09F00F07AA7 /* UI */,
 				943A947C27FEF09B00F07AA7 /* HeadlessCreditCardsViewController.swift */,
@@ -114,6 +117,14 @@
 				943A948527FEF14A00F07AA7 /* CreditCard.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9D11972C2825FAF10011679B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D11972A2825FAE80011679B /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				943A948127FEF09B00F07AA7 /* CameraView.swift in Sources */,
 				943A946B27FEEF0000F07AA7 /* SceneDelegate.swift in Sources */,
 				943A948227FEF09B00F07AA7 /* CreditCardDetailsCell.swift in Sources */,
+				9D11972B2825FAE80011679B /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +351,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
@@ -363,6 +376,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.veryfi.VeryfiLensHeadless-CreditCards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +388,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
@@ -398,6 +413,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.veryfi.VeryfiLensHeadless-CreditCards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
