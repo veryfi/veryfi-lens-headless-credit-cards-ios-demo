@@ -313,15 +313,24 @@
                                     <segue destination="3r6-Ri-qF3" kind="show" identifier="creditCardResult" id="88u-WW-wJs"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XEC-x2-jbY">
+                                <rect key="frame" x="187" y="549" width="40" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="nXa-EP-5Ep"/>
+                                    <constraint firstAttribute="height" constant="30" id="wIX-xr-KJr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u89-oU-UEp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="e5F-XP-dbq" firstAttribute="height" secondItem="sHq-UA-Fvz" secondAttribute="height" multiplier="0.5" id="2CT-G8-73g"/>
                             <constraint firstItem="G35-6V-ewG" firstAttribute="centerX" secondItem="sHq-UA-Fvz" secondAttribute="centerX" id="51Y-hR-nWo"/>
+                            <constraint firstItem="XEC-x2-jbY" firstAttribute="centerX" secondItem="sHq-UA-Fvz" secondAttribute="centerX" id="8Sb-xh-EB3"/>
                             <constraint firstItem="zR9-jy-D1x" firstAttribute="top" secondItem="u89-oU-UEp" secondAttribute="top" id="A0q-Ri-ZKj"/>
                             <constraint firstItem="u89-oU-UEp" firstAttribute="bottom" secondItem="G35-6V-ewG" secondAttribute="bottom" constant="16" id="Emq-qi-p9T"/>
                             <constraint firstItem="G35-6V-ewG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PQ7-Rg-eSd" secondAttribute="bottom" constant="8" id="GWa-j0-mf8"/>
+                            <constraint firstItem="XEC-x2-jbY" firstAttribute="top" secondItem="PQ7-Rg-eSd" secondAttribute="bottom" constant="16" id="HTl-TP-DSL"/>
                             <constraint firstItem="loz-f5-bW3" firstAttribute="leading" secondItem="u89-oU-UEp" secondAttribute="leading" id="MiV-QT-bXk"/>
                             <constraint firstItem="xdf-g5-g0o" firstAttribute="centerX" secondItem="sHq-UA-Fvz" secondAttribute="centerX" id="Mlz-gK-LP1"/>
                             <constraint firstItem="PQ7-Rg-eSd" firstAttribute="leading" secondItem="u89-oU-UEp" secondAttribute="leading" constant="32" id="Rwy-Wu-eLM"/>
@@ -345,6 +354,7 @@
                         <outlet property="cardDate" destination="mdL-cV-DoC" id="F78-vf-V2J"/>
                         <outlet property="cardHolder" destination="k0Q-N2-0hZ" id="hWh-TD-Q5i"/>
                         <outlet property="cardNumber" destination="tc3-bB-tBv" id="qR4-LB-S7f"/>
+                        <outlet property="flipCardImageView" destination="XEC-x2-jbY" id="oyv-o5-tDB"/>
                         <outlet property="guide" destination="PQ7-Rg-eSd" id="BA9-qB-fNN"/>
                         <outlet property="guideLabel" destination="PQ7-Rg-eSd" id="DyU-eS-9Q6"/>
                     </connections>
@@ -355,6 +365,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
