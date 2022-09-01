@@ -38,10 +38,15 @@ class HeadlessCreditCardsViewController: UIViewController {
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let credentials = VeryfiLensHeadlessCredentials(clientId: "XXXXXX",
-                                                        username: "XXXXXX",
-                                                        apiKey: "XXXXXX",
-                                                        url: "XXXXXX")
+        let CLIENT_ID = getEnvironmentVar(key: "VERYFI_CLIENT_ID") // replace with your assigned Client Id
+        let AUTH_USERNAME = getEnvironmentVar(key: "VERYFI_USERNAME") // replace with your assigned Username
+        let AUTH_APIKEY = getEnvironmentVar(key: "VERYFI_API_KEY") // replace with your assigned API Key
+        let URL = getEnvironmentVar(key: "VERYFI_URL") // replace with your assigned Endpoint URL
+        
+        let credentials = VeryfiLensHeadlessCredentials(clientId: CLIENT_ID,
+                                                        username: AUTH_USERNAME,
+                                                        apiKey: AUTH_APIKEY,
+                                                        url: URL)
         
         let settings = VeryfiLensCreditCardsSettings()
         settings.marginTop = 90
@@ -239,6 +244,11 @@ class HeadlessCreditCardsViewController: UIViewController {
         VeryfiLensHeadless.shared().settings.detectCardDate = true
         VeryfiLensHeadless.shared().settings.detectCardCVC = true
         VeryfiLensHeadless.shared().reset()
+    }
+    
+    //Func to get environment variables.
+    private func getEnvironmentVar(key: String) -> String {
+        return Bundle.main.object(forInfoDictionaryKey: key) as? String ?? ""
     }
 }
 
