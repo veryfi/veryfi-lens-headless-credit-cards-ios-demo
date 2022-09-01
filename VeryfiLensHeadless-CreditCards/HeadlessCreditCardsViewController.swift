@@ -49,7 +49,7 @@ class HeadlessCreditCardsViewController: UIViewController {
                                                         url: URL)
         
         let settings = VeryfiLensCreditCardsSettings()
-        settings.marginTop = 90
+        settings.marginTop = 80
         settings.marginBottom = 30
         
         VeryfiLensHeadless.shared().delegate = self
