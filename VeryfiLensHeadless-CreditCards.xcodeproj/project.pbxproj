@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FD3BC88B2706C7E1ED357FA /* Pods_VeryfiLensHeadless_CreditCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078BBDDB1C6734C3ED3E3365 /* Pods_VeryfiLensHeadless_CreditCards.framework */; };
 		943A946927FEEF0000F07AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A946827FEEF0000F07AA7 /* AppDelegate.swift */; };
 		943A946B27FEEF0000F07AA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A946A27FEEF0000F07AA7 /* SceneDelegate.swift */; };
 		943A947027FEEF0000F07AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943A946E27FEEF0000F07AA7 /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		943A948327FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */; };
 		943A948627FEF14A00F07AA7 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A948527FEF14A00F07AA7 /* CreditCard.swift */; };
 		9D11972B2825FAE80011679B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D11972A2825FAE80011679B /* UIImage+Extensions.swift */; };
+		A152191D409290E3DAEC437D /* Pods_VeryfiLensHeadless_CreditCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6703C1D254515A6C34FD6CA /* Pods_VeryfiLensHeadless_CreditCards.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		078BBDDB1C6734C3ED3E3365 /* Pods_VeryfiLensHeadless_CreditCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeryfiLensHeadless_CreditCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AECC8E313F93203F4E2D979 /* Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig"; path = "Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig"; sourceTree = "<group>"; };
+		4E1F17932F8CD27E6474DA95 /* Pods-VeryfiLensHeadless-CreditCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeryfiLensHeadless-CreditCards.release.xcconfig"; path = "Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards.release.xcconfig"; sourceTree = "<group>"; };
 		943A946527FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VeryfiLensHeadless-CreditCards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		943A946827FEEF0000F07AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943A946A27FEEF0000F07AA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,9 +49,8 @@
 		943A947E27FEF09B00F07AA7 /* CreditCardDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDetailsCell.swift; sourceTree = "<group>"; };
 		943A947F27FEF09B00F07AA7 /* HeadlessCreditCardResultViewControlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlessCreditCardResultViewControlerViewController.swift; sourceTree = "<group>"; };
 		943A948527FEF14A00F07AA7 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
-		9C6C0F9DF4E77C6A34B10978 /* Pods-VeryfiLensHeadless-CreditCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeryfiLensHeadless-CreditCards.release.xcconfig"; path = "Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards.release.xcconfig"; sourceTree = "<group>"; };
 		9D11972A2825FAE80011679B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		F6EA103E6D84C79E1A64F944 /* Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig"; path = "Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig"; sourceTree = "<group>"; };
+		D6703C1D254515A6C34FD6CA /* Pods_VeryfiLensHeadless_CreditCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeryfiLensHeadless_CreditCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD3BC88B2706C7E1ED357FA /* Pods_VeryfiLensHeadless_CreditCards.framework in Frameworks */,
+				A152191D409290E3DAEC437D /* Pods_VeryfiLensHeadless_CreditCards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +68,8 @@
 		7D3AB72CF5157FA686B1FEF4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F6EA103E6D84C79E1A64F944 /* Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig */,
-				9C6C0F9DF4E77C6A34B10978 /* Pods-VeryfiLensHeadless-CreditCards.release.xcconfig */,
+				1AECC8E313F93203F4E2D979 /* Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig */,
+				4E1F17932F8CD27E6474DA95 /* Pods-VeryfiLensHeadless-CreditCards.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 				943A946727FEEF0000F07AA7 /* VeryfiLensHeadless-CreditCards */,
 				943A946627FEEF0000F07AA7 /* Products */,
 				7D3AB72CF5157FA686B1FEF4 /* Pods */,
-				E6CB8FCCA00AACA887900F46 /* Frameworks */,
+				C243140B840EB1F39D6AB0EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,10 +135,10 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		E6CB8FCCA00AACA887900F46 /* Frameworks */ = {
+		C243140B840EB1F39D6AB0EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				078BBDDB1C6734C3ED3E3365 /* Pods_VeryfiLensHeadless_CreditCards.framework */,
+				D6703C1D254515A6C34FD6CA /* Pods_VeryfiLensHeadless_CreditCards.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,13 +150,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 943A947927FEEF0000F07AA7 /* Build configuration list for PBXNativeTarget "VeryfiLensHeadless-CreditCards" */;
 			buildPhases = (
-				403542C0F69BC2BE471BA69E /* [CP] Check Pods Manifest.lock */,
+				87BDE31B5B1BB698F02B6023 /* [CP] Check Pods Manifest.lock */,
 				943A946127FEEF0000F07AA7 /* Sources */,
 				943A946227FEEF0000F07AA7 /* Frameworks */,
 				943A946327FEEF0000F07AA7 /* Resources */,
 				9D232E1528C0857800774F9C /* Add env variables */,
 				94EAF54627FF0350007D321E /* Embed Frameworks */,
-				1F56AED1B57DA42BB8C6F7F4 /* [CP] Embed Pods Frameworks */,
+				A79B36CC72BBC8631C990849 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,24 +214,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F56AED1B57DA42BB8C6F7F4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		403542C0F69BC2BE471BA69E /* [CP] Check Pods Manifest.lock */ = {
+		87BDE31B5B1BB698F02B6023 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,6 +254,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nINFO_PLIST=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n/usr/libexec/PlistBuddy -c \"Add :VERYFI_CLIENT_ID string $VERYFI_CLIENT_ID\" \"$INFO_PLIST\"\n/usr/libexec/PlistBuddy -c \"Add :VERYFI_USERNAME string $VERYFI_USERNAME\" \"$INFO_PLIST\"\n/usr/libexec/PlistBuddy -c \"Add :VERYFI_API_KEY string $VERYFI_API_KEY\" \"$INFO_PLIST\"\n/usr/libexec/PlistBuddy -c \"Add :VERYFI_URL string $VERYFI_URL\" \"$INFO_PLIST\"\n";
+		};
+		A79B36CC72BBC8631C990849 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VeryfiLensHeadless-CreditCards/Pods-VeryfiLensHeadless-CreditCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -428,7 +428,7 @@
 		};
 		943A947A27FEEF0000F07AA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6EA103E6D84C79E1A64F944 /* Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig */;
+			baseConfigurationReference = 1AECC8E313F93203F4E2D979 /* Pods-VeryfiLensHeadless-CreditCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,7 +466,7 @@
 		};
 		943A947B27FEEF0000F07AA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C6C0F9DF4E77C6A34B10978 /* Pods-VeryfiLensHeadless-CreditCards.release.xcconfig */;
+			baseConfigurationReference = 4E1F17932F8CD27E6474DA95 /* Pods-VeryfiLensHeadless-CreditCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
