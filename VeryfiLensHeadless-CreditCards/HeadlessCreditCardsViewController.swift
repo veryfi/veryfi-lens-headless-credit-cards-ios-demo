@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import VeryfiLensHeadless
+import VeryfiLensHeadlessCreditCards
 import AVFoundation
 
 class HeadlessCreditCardsViewController: UIViewController {

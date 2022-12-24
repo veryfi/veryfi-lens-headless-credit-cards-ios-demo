@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import VeryfiLensHeadless
+import VeryfiLensHeadlessCreditCards
 
 class HeadlessCreditCardResultViewControlerViewController: UIViewController {
     enum FieldType: String {
