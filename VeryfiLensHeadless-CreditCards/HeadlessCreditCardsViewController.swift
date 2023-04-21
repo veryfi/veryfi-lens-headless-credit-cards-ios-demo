@@ -192,17 +192,18 @@ class HeadlessCreditCardsViewController: UIViewController {
         if creditCard == nil {
             creditCard = CreditCard()
         }
+        let newSettings = VeryfiLensCreditCardsSettings()
         if creditCard?.holder?.isEmpty ?? true {
             creditCard?.holder = newCreditCard?.holder
-            VeryfiLensHeadless.shared().settings.detectCardHolderName = creditCard?.holder?.isEmpty ?? true
+            newSettings.detectCardHolderName = creditCard?.holder?.isEmpty ?? true
         }
         if creditCard?.number?.isEmpty ?? true {
             creditCard?.number = newCreditCard?.number
-            VeryfiLensHeadless.shared().settings.detectCardNumber = creditCard?.number?.isEmpty ?? true
+            newSettings.detectCardNumber = creditCard?.number?.isEmpty ?? true
         }
         if creditCard?.dates?.isEmpty ?? true {
             creditCard?.dates = newCreditCard?.dates
-            VeryfiLensHeadless.shared().settings.detectCardDate = creditCard?.dates?.isEmpty ?? true
+            newSettings.detectCardDate = creditCard?.dates?.isEmpty ?? true
         }
         if creditCard?.identifier?.isEmpty ?? true {
             creditCard?.identifier = newCreditCard?.identifier
@@ -212,8 +213,9 @@ class HeadlessCreditCardsViewController: UIViewController {
         }
         if creditCard?.cvc?.isEmpty ?? true {
             creditCard?.cvc = newCreditCard?.cvc
-            VeryfiLensHeadless.shared().settings.detectCardCVC = creditCard?.cvc?.isEmpty ?? true
+            newSettings.detectCardCVC = creditCard?.cvc?.isEmpty ?? true
         }
+        VeryfiLensHeadless.shared().updateSettings(newSettings)
     }
     
     private func animateFlipImageView() {
@@ -239,10 +241,12 @@ class HeadlessCreditCardsViewController: UIViewController {
         creditCard = nil
         cleanLabels()
         flipExtractionRequired = false
-        VeryfiLensHeadless.shared().settings.detectCardNumber = true
-        VeryfiLensHeadless.shared().settings.detectCardHolderName = true
-        VeryfiLensHeadless.shared().settings.detectCardDate = true
-        VeryfiLensHeadless.shared().settings.detectCardCVC = true
+        let newSettings = VeryfiLensCreditCardsSettings()
+        newSettings.detectCardNumber = true
+        newSettings.detectCardHolderName = true
+        newSettings.detectCardDate = true
+        newSettings.detectCardCVC = true
+        VeryfiLensHeadless.shared().updateSettings(newSettings)
         VeryfiLensHeadless.shared().reset()
     }
     
