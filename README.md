@@ -26,7 +26,8 @@ You can read further about Lens in Veryfi's dedicated page: https://www.veryfi.c
 ## Veryfi Lens Headless Credit Cards iOS Example <a name="example"></a>
 This is an example of how to use Veryfi Lens Headless Credit Cards in your app, you can find the developer documentation [here](https://app.veryfi.com/lens/docs/ios/).
 
-![headless-gif](https://user-images.githubusercontent.com/30441118/179795505-4da29d1b-d329-46ff-a41e-b3eafbe6c517.gif)
+![headless-gif](https://github.com/veryfi/veryfi-lens-headless-credit-cards-ios-demo/assets/2013102/d5e7625e-f5d9-4a9d-9c38-b5ac4e00a547)
+
 
 ## How to add Veryfi Lens Headless Credit Cards to your project <a name="cocoapods"></a>
 
