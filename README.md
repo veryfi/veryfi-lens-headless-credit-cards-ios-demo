@@ -35,7 +35,7 @@ Install from our private [Cocoapods](https://hub.veryfi.com/api/settings/keys).
 
 Add in your project Podfile file the Veryfi Lens Headless Credit Cards iOS SDK dependency:
 ```ruby
-pod 'VeryfiLensHeadless-CreditCards', '2.1.49.7'
+pod 'VeryfiLensHeadless-CreditCards', '2.1.50.6'
 ```
 
 ## How to run this project <a name="configuration"></a>
