@@ -5,7 +5,7 @@ target 'VeryfiLensHeadless-CreditCards' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'VeryfiLensHeadless-CreditCards', '3.0.11.5'
+  pod 'VeryfiLensHeadless-CreditCards', '3.0.13.7'
   # Pods for VeryfiLensHeadless-CreditCards
 
 end
