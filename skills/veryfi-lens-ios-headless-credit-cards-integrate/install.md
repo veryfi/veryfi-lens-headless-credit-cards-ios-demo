@@ -57,7 +57,16 @@ Deployment target for this XCFramework is **Unconfirmed** in this pack.
 
 ## App size
 
-When installed size matters, recommend the **Remote Models** flavor. A specific flavor embeds its models in the binary. Remote Models keeps that binary smaller and downloads most of the heavy model resources after install, only for the features the host turned on.
+When installed size matters, recommend the **Remote Models** flavor. It is the smallest Lens SDK and matches the full flavor's feature set. Heavy models stay out of the binary. The first successful `configure` downloads only the models for the document types and features in that call. Later launches reuse those files. Install it as the only Lens artifact in the app target.
+
+- iOS SPM: `https://repo.veryfi.com/shared/lens/veryfi-lens-spm-remote-models.git` (`veryfi-lens-spm-remote-models`)
+- iOS CocoaPods pod: `VeryfiLens-RemoteModels` (deprecated; no dedicated CocoaPods repo in the release pipeline). Prefer SPM.
+- Android Maven: `com.veryfi.lens:veryfi-lens-remote-models-sdk`
+
+Guide: [Remote Models](https://docs.veryfi.com/lens/mobile/remote-models/).
+
+Android credit-card capture stays on the Credit Cards artifact. On iOS, Remote Models also supports `credit_card`. This headless binary stays the package when the host owns the camera.
+
 
 Bank-check TIFF follows that split. `retrieveCheckTiffIsOn` is not supported on the Checks-specific flavor yet, because the TIFF model is large. Remote Models downloads it after install.
 
