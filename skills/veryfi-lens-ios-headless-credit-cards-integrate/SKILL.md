@@ -6,6 +6,7 @@ description: >-
   VeryfiLensCreditCardsSettings, and process(buffer:) on a host-owned camera.
   Use when the app supplies CMSampleBuffer frames and reads cards on device.
   Card data stays on device. No dedicated SPM repo is published.
+  Covers Lens analytics events and notification subscription (events.md).
 ---
 
 # Veryfi Lens iOS Headless Credit Cards
@@ -56,6 +57,7 @@ Headless credit cards:
 - [implementation.md](implementation.md)
 - [settings.md](settings.md)
 - [callbacks.md](callbacks.md)
+- [events.md](events.md) — analytics events, metrics, and notification subscription
 - [troubleshooting.md](troubleshooting.md)
 - [clarifications.md](clarifications.md)
 - [checklist.md](checklist.md)
@@ -91,3 +93,7 @@ Headless credit cards:
 ## Output
 
 Host sample includes the camera usage string, `configure` with `VeryfiLensCreditCardsSettings`, the capture-output call to `process(buffer:)`, and a delegate that reads the headless card keys.
+
+## Analytics and metrics
+
+Lens already records interaction events. When the host wants those metrics, subscribe as in [events.md](events.md). Use the event names listed there. Do not invent names. On Android, register `com.veryfi.lens.VeryfiLensSecureAnalyticsEvent`, not the deprecated `com.veryfi.lens.VeryfiLensAnalyticsEvent`. A plugin host calls the plugin observe API instead of registering that broadcast itself.
